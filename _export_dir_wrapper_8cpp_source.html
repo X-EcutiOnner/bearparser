@@ -155,15 +155,15 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        nameOrdRVA += <span class="keyword">sizeof</span>(WORD);</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="comment">//nameRVA += sizeof(DWORD);</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="comment">//printf(&quot;parsed num: %d\n&quot;, this-&gt;ordToNameRVA.size());</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">return</span> i;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">return</span> i;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
 </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_export_dir_wrapper.html#a88aaf739c6239484688dd17e188d092f">   63</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_export_dir_wrapper.html#a88aaf739c6239484688dd17e188d092f">ExportDirWrapper::wrap</a>()</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>{</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <a class="code hl_function" href="class_export_dir_wrapper.html#a706eeb2665046143ff6fc2379a451bec">clear</a>();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="foldopen" id="foldopen00062" data-start="{" data-end="}">
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_export_dir_wrapper.html#a88aaf739c6239484688dd17e188d092f">   62</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_export_dir_wrapper.html#a88aaf739c6239484688dd17e188d092f">ExportDirWrapper::wrap</a>()</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>{</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <a class="code hl_function" href="class_export_dir_wrapper.html#a706eeb2665046143ff6fc2379a451bec">clear</a>();</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <a class="code hl_function" href="class_export_dir_wrapper.html#abd57df0de1f87bbdc7ea89d77ed7f13e">mapNames</a>();</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    IMAGE_EXPORT_DIRECTORY* exp = <a class="code hl_function" href="class_export_dir_wrapper.html#a7e49769340051dc3d1f11a60288e281f">exportDir</a>();</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordflow">if</span> (exp == NULL) <span class="keywordflow">return</span> 0;</div>
@@ -498,7 +498,7 @@ $(function(){ initResizable(false); });
 <div class="ttc" id="aclass_export_dir_wrapper_html_a706eeb2665046143ff6fc2379a451bec"><div class="ttname"><a href="class_export_dir_wrapper.html#a706eeb2665046143ff6fc2379a451bec">ExportDirWrapper::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition</b> <a href="#l00032">ExportDirWrapper.cpp:32</a></div></div>
 <div class="ttc" id="aclass_export_dir_wrapper_html_a7217251c8776a9d94d8728dd0a4fc4be"><div class="ttname"><a href="class_export_dir_wrapper.html#a7217251c8776a9d94d8728dd0a4fc4be">ExportDirWrapper::getFieldPtr</a></div><div class="ttdeci">virtual void * getFieldPtr(size_t fieldId, size_t subField)</div><div class="ttdef"><b>Definition</b> <a href="#l00100">ExportDirWrapper.cpp:100</a></div></div>
 <div class="ttc" id="aclass_export_dir_wrapper_html_a7e49769340051dc3d1f11a60288e281f"><div class="ttname"><a href="class_export_dir_wrapper.html#a7e49769340051dc3d1f11a60288e281f">ExportDirWrapper::exportDir</a></div><div class="ttdeci">IMAGE_EXPORT_DIRECTORY * exportDir()</div><div class="ttdef"><b>Definition</b> <a href="#l00023">ExportDirWrapper.cpp:23</a></div></div>
-<div class="ttc" id="aclass_export_dir_wrapper_html_a88aaf739c6239484688dd17e188d092f"><div class="ttname"><a href="class_export_dir_wrapper.html#a88aaf739c6239484688dd17e188d092f">ExportDirWrapper::wrap</a></div><div class="ttdeci">bool wrap()</div><div class="ttdef"><b>Definition</b> <a href="#l00063">ExportDirWrapper.cpp:63</a></div></div>
+<div class="ttc" id="aclass_export_dir_wrapper_html_a88aaf739c6239484688dd17e188d092f"><div class="ttname"><a href="class_export_dir_wrapper.html#a88aaf739c6239484688dd17e188d092f">ExportDirWrapper::wrap</a></div><div class="ttdeci">bool wrap()</div><div class="ttdef"><b>Definition</b> <a href="#l00062">ExportDirWrapper.cpp:62</a></div></div>
 <div class="ttc" id="aclass_export_dir_wrapper_html_a9fa8577d854edb6aa2b7f82a9be60674"><div class="ttname"><a href="class_export_dir_wrapper.html#a9fa8577d854edb6aa2b7f82a9be60674">ExportDirWrapper::getName</a></div><div class="ttdeci">virtual QString getName()</div><div class="ttdef"><b>Definition</b> <a href="#l00090">ExportDirWrapper.cpp:90</a></div></div>
 <div class="ttc" id="aclass_export_dir_wrapper_html_ab2f4f6ac5b4e50a0ef9e96ecfa3ca0d2"><div class="ttname"><a href="class_export_dir_wrapper.html#ab2f4f6ac5b4e50a0ef9e96ecfa3ca0d2">ExportDirWrapper::containsAddrType</a></div><div class="ttdeci">virtual Executable::addr_type containsAddrType(size_t fieldId, size_t subField=FIELD_NONE)</div><div class="ttdef"><b>Definition</b> <a href="#l00145">ExportDirWrapper.cpp:145</a></div></div>
 <div class="ttc" id="aclass_export_dir_wrapper_html_abd57df0de1f87bbdc7ea89d77ed7f13e"><div class="ttname"><a href="class_export_dir_wrapper.html#abd57df0de1f87bbdc7ea89d77ed7f13e">ExportDirWrapper::mapNames</a></div><div class="ttdeci">size_t mapNames()</div><div class="ttdef"><b>Definition</b> <a href="#l00038">ExportDirWrapper.cpp:38</a></div></div>
